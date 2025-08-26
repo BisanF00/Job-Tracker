@@ -1,0 +1,13 @@
+.ant-menu-dark .ant-menu-item-selected {
+  background: transparent !important;
+}
+
+.ant-menu-dark .ant-menu-item a {
+  color: #ccc;
+  font-weight: 500;
+}
+
+.ant-menu-dark .ant-menu-item-selected a {
+  color: #40a9ff !important; 
+  font-weight: 600;
+}
