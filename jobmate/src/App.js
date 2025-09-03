@@ -11,6 +11,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase";
 import { Navigate } from "react-router-dom";
 import NotFound from "./Component/notFound";
+import ChatBox from "./Component/OpenAi/ChatBox";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <div>
+      {/* <ChatBox /> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
@@ -51,7 +53,7 @@ function App() {
               }
             />
           </Route>
-          <Route path="*" element={<NotFound />}/>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
